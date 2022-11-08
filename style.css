@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif; 
+}
+
+body {
+    background: radial-gradient(#e66465, #9198e5);
+    display: flex;
+    font-family: 'Fira Sans', sans-serif;   
+    align-items: center; 
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+img {
+    height: 550px;
+    width: 700px;
+    object-fit: cover;
+}
+
+.slideshow {
+    box-shadow: 3px 3px 5px #e66465;
+    height: 580px;
+    width: 700px;
+    overflow: hidden;
+}
+
+.image-container {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+  
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.buttons {
+    background-color: teal;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-family: 'Fira Sans', sans-serif;
+    font-style: oblique;
+    font-size: medium;
+    font-weight: bold;
+    padding: 0.5rem;
+    width: 49.8%;
+}
+
+.buttons:hover {
+    background-color: rgb(127, 255, 212);
+    opacity: 0.9;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+  
+.buttons:focus {
+    outline: none;
+}
